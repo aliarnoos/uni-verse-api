@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    environment:
+      - PORT=8080
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: ["npm", "run", "dev"] 
+    entrypoint: ["npm", "run", "dev"]
+
+  dynamodb:
+    image: amazon/dynamodb-local
+    container_name: dynamodb-local
+    ports:
+      - "8000:8000"
+    volumes:
+      - dynamodb-data:/data
+    command: "-jar DynamoDBLocal.jar -sharedDb -dbPath /data"
+
+volumes:
+  dynamodb-data:
