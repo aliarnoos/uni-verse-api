@@ -3,9 +3,9 @@
 
 ## Installation
 
-- Make sure you have [Docker Compose](https://docs.docker.com/compose/install/) insatlled on your machine!
+- Make sure you have [Docker Compose](https://docs.docker.com/compose/install/) insatlled on your machine !
 
-- Also it is recommended to install [DynamoDB Workbench](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.settingup.htmlsource=post_page-----8d3a9adec626--------------------------------)
+- Also it is recommended to install [DynamoDB Workbench](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.settingup.htmlsource=post_page-----8d3a9adec626--------------------------------) and have it running!
 
 Note: the Docker container provides a configured container that has Node.js 20 and DynamoDB insatlled
 
