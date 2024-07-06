@@ -1,5 +1,5 @@
 
-# Uni-verse Serverless Backend
+# Uni-verse API
 
 ## Installation
 
